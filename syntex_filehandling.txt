@@ -1,0 +1,22 @@
+#include<fstream>
+ofstream //write the file  cout
+ifstream //read the file   cin
+fstream // both write and read the file
+
+
+ofstream file1;
+ifstram file2;      we cannot write same names if all of thems are included one same function
+fstream file3;      mostly use this
+
+int a=10
+file1.open("D://info.txt");
+file1<<" "<<a<<"\n";
+file1.close();
+
+file2.open("D://info.txt");
+file2>>a>>b>>c;
+file2.close();
+
+file3.open("D://info.txt",ios::out);
+file3<<" "<<a<<"\n";                   //same for in 
+file3.close();
